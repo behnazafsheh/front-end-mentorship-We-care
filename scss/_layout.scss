@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--lightblue-color);
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+}
+.menu__image {
+  width: 120px;
+}
+.menu__item {
+  display: flex;
+}
+
+.menu__link {
+  margin: 0 2rem;
+  color: var(--navy-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.menu__btn {
+  border: none;
+  background: transparent;
+  margin-right: 1rem;
+}
+.menu__btn--sign-in {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: var(--darkblue-color);
+}

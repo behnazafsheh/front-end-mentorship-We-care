@@ -1,0 +1,58 @@
+:root {
+  --lightblue-color:rgb(233, 241, 255);
+  --darkblue-color: rgb(1, 78, 213);
+  --navy-color: rgb(16, 40, 81);
+  --gray-color:rgb(229, 233, 232);
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(250, 248, 255);
+  --orange-color: rgb(250, 196, 141);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 62.5%;
+    font-family: "Urbanist", "Roboto", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+  }
+  
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  i {
+    color: var(--white-color);
+    font-size: 1.5rem;
+  }
+
+  button{
+    cursor: pointer;
+  }
