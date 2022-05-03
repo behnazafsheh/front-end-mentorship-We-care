@@ -7,13 +7,9 @@
     <title>we care</title>
     <link rel="stylesheet" href="css/main.css">
     <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -55,10 +51,73 @@
             </div>
 
             <div class="hero__image">
-                <img src="images/doctor-3.png" alt="">
+                <img src="images/0-doctor.png" alt="">
             </div>
         </div>
     </header>
-    <section class="search-bar"></section>
+    <section class="search-bar">
+        <div class="search-bar-container">
+        <div class="search-bar__items">
+            <div class="search-people">
+                <i class="fa-regular fa-magnifying-glass-location"></i>
+                <input type="search" class="search-people__input" placeholder="Search for Doctor, Conditions or Prodecures">
+            </div>
+
+            <div class="search-location">
+                <i class="fa-regular fa-map-pin"></i>
+                <input type="search" class="search-location__input" placeholder="Set Your Location">
+            </div>
+           <button type="submit" class="search-bar__btn"><i class="fa-regular fa-magnifying-glass-location"></i></button>
+        </div>
+           <div class="search-option">
+               <h3 class="search-option__header">You may be looking for</h3>
+               <div class="search-option__items">
+                <div class="search-items">
+                    Family Medicine
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="search-items">
+                    Pediatrics
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="search-items">
+                    Top Hospitals
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="search-items">
+                    TeleHealth
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="search-items">
+                    COVID-19
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="search-items">
+                    Orthopedic Surgery
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <button type="button" class="search-option__btn">More</button>
+               </div>
+           </div>
+        </div>
+    </section>
+    <section class="popular-search container">
+        <div class="popular-search__header">
+            <h2>Popular Searches on Wecare</h2>
+        </div>
+        <div class="select-items">
+            <select size=3 class="select-items__option">
+                <option>Specialties</option>
+                <option>Conditions</option>
+                <option>Procedures</option>
+                <option>Internal</option>
+                <option>Neurology</option>
+                <option>Dermatology</option>
+                <option>Procedures</option>
+                <option>Internal</option>
+              </select>
+        </div>
+    </section>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 </body>
 </html>
