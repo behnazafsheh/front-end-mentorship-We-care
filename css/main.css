@@ -176,6 +176,7 @@
   border-radius: 1rem;
   margin: 0 2rem;
   padding: 1rem;
+  font-size: 1rem;
 }
 
 .search-items i {
@@ -222,6 +223,7 @@
 }
 
 .specialties-col {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,9 +244,131 @@
   font-weight: 700;
 }
 
+.search-doctor-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+
+.search-doctor-items {
+  margin: 1rem 3rem;
+  font-size: 2.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-items p {
+  color: var(--gray-color);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.search-doctor-search-bar {
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+}
+
+.search-doctor-search-bar i {
+  background-color: var(--lightgray-color);
+  color: var(--purple-color);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.search-doctor-search-bar h3 {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-search-bar-description {
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--purple-color);
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.search-doctor-search-bar-description p {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-appointment {
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+}
+
+.search-doctor-appointment i {
+  background-color: var(--lightgray-color);
+  color: var(--darkblue-color);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.search-doctor-appointment h3 {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-appointment-description {
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--darkblue-color);
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.search-doctor-appointment-description p {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-contact {
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+}
+
+.search-doctor-contact i {
+  background-color: var(--lightgray-color);
+  color: var(--green-color);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.search-doctor-contact h3 {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-contact-description {
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--green-color);
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.search-doctor-contact-description p {
+  font-size: 1.5rem;
+  color: var(--navy-color);
+}
+
+.search-doctor-image {
+  margin-top: 5rem;
+  align-items: center;
+}
+
 :root {
   --lightblue-color: rgb(233, 241, 255);
-  --darkblue-color: rgb(1, 78, 213);
+  --darkblue-color: rgba(1, 78, 213);
   --navy-color: rgb(16, 40, 81);
   --lightgray-color: rgb(229, 233, 232);
   --black-color: rgb(0, 0, 0);
@@ -252,6 +376,8 @@
   --gray-color: rgb(122, 122, 122);
   --lightgray-color: rgb(229,234,245);
   --bg-color:rgb(243, 243, 243);
+  --purple-color:rgb(128, 0, 128);
+  --green-color:rgb(121, 255, 124);
 }
 
 * {

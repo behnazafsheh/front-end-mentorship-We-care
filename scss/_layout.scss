@@ -76,21 +76,21 @@
   margin: 0 1rem;
   border-radius: 0.5rem;
 
-  p{
+  p {
     font-size: 1.3rem;
     color: var(--white-color);
   }
 
-  i{
+  i {
     font-size: 3rem;
     padding: 0 1rem;
   }
 }
-.search-bar{
+.search-bar {
   display: flex;
   justify-content: center;
 }
-.search-bar-container{
+.search-bar-container {
   background-color: var(--white-color);
   width: 75%;
   height: 20rem;
@@ -104,13 +104,13 @@
   bottom: 0;
   z-index: 1;
 }
-.search-bar__items{
+.search-bar__items {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .search-people,
-.search-location{
+.search-location {
   display: flex;
   width: 35%;
   border: 0.01rem solid var(--gray-color);
@@ -118,29 +118,24 @@
   padding: 2rem;
   background-color: var(--lightgray-color);
 
-  i{
+  i {
     color: var(--black-color);
     margin-right: 0.3rem;
   }
-
 }
 .search-people__input,
-.search-location__input{
+.search-location__input {
   width: 100%;
   border: none;
   outline: none;
   background-color: var(--lightgray-color);
-
-  
 }
 
-::placeholder{
+::placeholder {
   background-color: var(--lightgray-color);
-
 }
 
-
-.search-bar__btn{
+.search-bar__btn {
   width: 7%;
   height: 100%;
   background-color: var(--darkblue-color);
@@ -150,19 +145,19 @@
   padding: 1rem;
 }
 
-.search-option__header{
+.search-option__header {
   font-size: 2rem;
   color: var(--navy-color);
   margin: 2rem 3rem;
 }
 
-.search-option__items{
+.search-option__items {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-items{
+.search-items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,15 +165,15 @@
   border-radius: 1rem;
   margin: 0 2rem;
   padding: 1rem;
+  font-size: 1rem;
 
-  i{
+  i {
     color: var(--black-color);
     margin: 0 0.5rem;
-
   }
 }
 
-.search-option__btn{
+.search-option__btn {
   background-color: var(--lightblue-color);
   color: var(--darkblue-color);
   padding: 0.9rem;
@@ -187,20 +182,20 @@
   font-weight: 500;
 }
 
-.popular-search{
+.popular-search {
   margin-top: 20rem;
 }
 
-.popular-search__header{
+.popular-search__header {
   margin: 1rem 3rem;
   font-size: 2.5rem;
   color: var(--navy-color);
 }
-.popular-search-items{
+.popular-search-items {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
-.select-items__option{
+.select-items__option {
   border: none;
   border-right: 1px solid var(--darkblue-color);
   color: var(--navy-color);
@@ -209,11 +204,12 @@
   outline: none;
   background-color: var(--bg-color);
 
-  option{
+  option {
     padding: 1rem 0;
   }
 }
-.specialties-col{
+.specialties-col {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,12 +219,129 @@
   padding: 1rem;
   background-color: var(--white-color);
 
-  img{
+  img {
     width: 100px;
   }
-  p{
+  p {
     font-size: 1rem;
     margin: 1rem 0;
     font-weight: 700;
   }
+}
+///////////////////////////////////////////////////////
+.search-doctor-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+
+.search-doctor-items {
+  margin: 1rem 3rem;
+  font-size: 2.5rem;
+  color: var(--navy-color);
+
+  p{
+    color: var(--gray-color);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+.search-doctor-search-bar{
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+
+  i{
+    background-color: var(--lightgray-color);
+    color: var(--purple-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+
+  }
+  h3{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+
+.search-doctor-search-bar-description{
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--purple-color);
+  border-radius: 1rem;
+  width: 50%;
+  p{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+
+.search-doctor-appointment{
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+
+  i{
+    background-color: var(--lightgray-color);
+    color: var(--darkblue-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+
+  }
+  h3{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+
+.search-doctor-appointment-description{
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--darkblue-color);
+  border-radius: 1rem;
+  width: 50%;
+  p{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+
+.search-doctor-contact{
+  display: flex;
+  margin: 1rem 3rem;
+  align-items: center;
+
+  i{
+    background-color: var(--lightgray-color);
+    color: var(--green-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+
+  }
+  h3{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+.search-doctor-contact-description{
+  margin: 1rem 3rem;
+  padding: 2rem 0.5rem;
+  border-left: 1px solid var(--green-color);
+  border-radius: 1rem;
+  width: 50%;
+  p{
+    font-size: 1.5rem;
+    color: var(--navy-color);
+  }
+}
+
+.search-doctor-image{
+  margin-top: 5rem;
+  align-items: center;
 }

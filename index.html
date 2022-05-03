@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>we care</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="images/WeCare.ico">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
@@ -59,12 +60,12 @@
         <div class="search-bar-container">
         <div class="search-bar__items">
             <div class="search-people">
-                <i class="fa-regular fa-magnifying-glass-location"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="search" class="search-people__input" placeholder="Search for Doctor, Conditions or Prodecures">
             </div>
 
             <div class="search-location">
-                <i class="fa-regular fa-map-pin"></i>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <input type="search" class="search-location__input" placeholder="Set Your Location">
             </div>
            <button type="submit" class="search-bar__btn"><i class="fa-regular fa-magnifying-glass-location"></i></button>
@@ -119,23 +120,23 @@
                     <option>General</option>
                   </select>
             </div>
-            <div class="specialties-col">
+            <div class="specialties-col active" onclick="selected()" id="specialties">
                 <img src="images/dermatology-icon.png" alt="">
                 <p>Dermatology</p>
             </div>
-            <div class="specialties-col">
+            <div class="specialties-col" onclick="selected()" id="specialties">
                 <img src="images/internal-medicine.png" alt="">
                 <p>Internal Medicine</p>
             </div>
-            <div class="specialties-col">
+            <div class="specialties-col" onclick="selected()" id="specialties">
                 <img src="images/neurology.png" alt="">
                 <p>Neurology</p>
             </div>
-            <div class="specialties-col">
+            <div class="specialties-col" onclick="selected()" id="specialties">
                 <img src="images/general-medicine.png" alt="">
                 <p>General Medicine</p>
             </div>
-            <div class="specialties-col">
+            <div class="specialties-col" onclick="selected()" id="specialties">
                 <img src="images/dentistry.png" alt="">
                 <p>Dentistry</p>
             </div>
@@ -143,6 +144,56 @@
         </div>
         
     </section>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <section class="search-doctor">
+        <div class="search-doctor-container container">
+            <div class="search-doctor-elements">
+                <div class="search-doctor-items">
+                    <h2>Find the right doctor
+                        right at your fingertips</h2>
+                        <p>Wecare gives you the tools and information you need to</p>
+                </div>
+                <div class="search-doctor-search-bar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <h3>Search nearest hospital</h3>
+                </div>
+                <div class="search-doctor-search-bar-description">
+                    <p>Find doctors and hospitals based on the factors
+                        that matter most to you.</p>
+                </div>
+    
+                <div class="search-doctor-appointment">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <h3>Appointment with the best doctor</h3>
+                </div>
+    
+                <div class="search-doctor-appointment-description">
+                    <p>Find doctors and hospitals based on the factors
+                        that matter most to you.</p>
+                </div>
+    
+                <div class="search-doctor-contact">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <h3>Get Contact</h3>
+                </div>
+    
+                <div class="search-doctor-contact-description">
+                    <p>Find doctors and hospitals based on the factors
+                        that matter most to you.</p>
+                </div>
+    
+                
+            </div>
+            <div class="search-doctor-image">
+                <img src="images/3-doctor.png" alt="">
+                <div class="searchTool">
+                    <h3>Find the best doctor you need</h3>
+                    <input type="search">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script> -->
 </body>
 </html>
