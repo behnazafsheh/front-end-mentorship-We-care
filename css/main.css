@@ -193,17 +193,53 @@
 }
 
 .popular-search {
-  display: flex;
   margin-top: 20rem;
 }
 
 .popular-search__header {
-  margin: 0 3rem;
+  margin: 1rem 3rem;
   font-size: 2.5rem;
+  color: var(--navy-color);
+}
+
+.popular-search-items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .select-items__option {
   border: none;
+  border-right: 1px solid var(--darkblue-color);
+  color: var(--navy-color);
+  padding: 0 1rem;
+  margin: 2rem 0;
+  outline: none;
+  background-color: var(--bg-color);
+}
+
+.select-items__option option {
+  padding: 1rem 0;
+}
+
+.specialties-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--white-color);
+}
+
+.specialties-col img {
+  width: 100px;
+}
+
+.specialties-col p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: 700;
 }
 
 :root {
@@ -212,10 +248,10 @@
   --navy-color: rgb(16, 40, 81);
   --lightgray-color: rgb(229, 233, 232);
   --black-color: rgb(0, 0, 0);
-  --white-color: rgb(250, 248, 255);
+  --white-color: rgb(255, 255, 255);
   --gray-color: rgb(122, 122, 122);
-  --lightgray-color: rgb(229,234,245)
-  ;
+  --lightgray-color: rgb(229,234,245);
+  --bg-color:rgb(243, 243, 243);
 }
 
 * {
