@@ -1,6 +1,9 @@
 .header {
   background-color: var(--lightblue-color);
 }
+// .header-container{
+//   position: fixed;
+// }
 .menu {
   display: flex;
   justify-content: space-around;
@@ -486,7 +489,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: var(--navy-color);
 }
 .specialist p {
@@ -541,8 +544,19 @@
     margin-bottom: 2rem;
   }
 
-  &:hover  {
+  &:hover {
     transform: translateX(15px);
     cursor: pointer;
   }
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  margin: 3rem 0;
+  background-color: rebeccapurple;
+  color: var(--white-color);
+}
+
+.swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets, .swiper-pagination-horizontal{
+  // margin: 3rem 0;
 }

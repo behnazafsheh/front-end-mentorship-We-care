@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" 
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -275,51 +293,73 @@
     <section class="specialist">
         <h2>Meet Our Specialist</h2>
         <p>Wecare gives you the Names and Information you need to</p>
-        <div class="specialist-container container">
-            <div class="specialist-card">
-                <img src="images/1-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
+        <div class="swiper mySwiper specialist-container container">
+            <div class="swiper-wrapper">
+                <div class="specialist-card swiper-slide">
+                    <img src="images/1-doctor.png" alt="">
+                    <h3>Dr.Leslie Alexander</h3>
+                    <span>Product Medicine</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/6-doctor.png" alt="">
+                    <h3>Dr.Ksthryn Murphy</h3>
+                    <span>Dental surgen</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/5-doctor.png" alt="">
+                    <h3>Dr. Robert Fox</h3>
+                    <span>Thromatic surgen</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/8-doctor.png" alt="">
+                    <h3>Dr.Jenny Wilson</h3>
+                    <span>Intern CardioLogy</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/9-doctor.png" alt="">
+                    <h3>Dr.Arlone Mckoy</h3>
+                    <span>Cardiology</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/5-doctor.png" alt="">
+                    <h3>Dr.Jerome Bell</h3>
+                    <span>Dentist & Fiziologyst</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/9-doctor.png" alt="">
+                    <h3>Dr.Albert Flores</h3>
+                    <span>Intern Neurology</span>
+                </div>
+                <div class="specialist-card swiper-slide">
+                    <img src="images/8-doctor.png" alt="">
+                    <h3>Dr.Leslie Alexander</h3>
+                    <span>Product Medicine</span>
+                </div>
+                
             </div>
-            <div class="specialist-card">
-                <img src="images/6-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/5-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/8-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/9-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/5-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/9-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
-            <div class="specialist-card">
-                <img src="images/8-doctor.png" alt="">
-                <h3>Dr.Leslie Alexander</h3>
-                <span>Product Medicine</span>
-            </div>
+            
+            
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
             
         </div>
     </section>
+    <section class="feedback">
+        <h2>Our patients feedback about us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum aperiam sapiente quos
+            provident error laudantium reprehenderit consequatur!</p>
+            <div class="feedback-container container">
+                <div class="feedback__image">
+                    <img src="images/" alt="">
+                </div>
+            </div>
+    </section>
     <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script> -->
 </body>
 </html>
