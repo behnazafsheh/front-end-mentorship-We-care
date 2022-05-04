@@ -433,6 +433,10 @@
   background-color: var(--lightblue-color);
 }
 
+.choose-wecare__image {
+  position: relative;
+}
+
 .choose-wecare-list {
   display: flex;
   flex-direction: column;
@@ -440,12 +444,22 @@
 
 .choose-wecare-list h2 {
   color: var(--navy-color);
-  font-size: 5.8rem;
+  font-size: 3.5rem;
 }
 
 .choose-wecare-list span {
   color: var(--gray-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.choose-wecare-list button {
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  width: 40%;
+  margin: 1.5rem 3rem;
 }
 
 .choose-wecare__item {
@@ -465,6 +479,101 @@
   margin: 0 1rem;
 }
 
+.doctors-list {
+  background-color: var(--white-color);
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  border-radius: 1rem;
+}
+
+.doctors-list img {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.doctors-list ul {
+  margin: 1rem 1rem;
+}
+
+.doctor-list__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.doctor-list__items i {
+  color: var(--black-color);
+}
+
+.doctor-list__items p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.specialist h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: var(--navy-color);
+}
+
+.specialist p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--gray-color);
+}
+
+.specialist-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.specialist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightgray-color);
+  width: 80%;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 2.8px 2.8px 3.3px rgba(0, 0, 0, 0.02), 6.7px 6.7px 8px rgba(0, 0, 0, 0.028), 12.5px 12.5px 15px rgba(0, 0, 0, 0.035), 22.3px 22.3px 26.8px rgba(0, 0, 0, 0.042), 41.8px 41.8px 50.1px rgba(0, 0, 0, 0.05), 100px 100px 120px rgba(0, 0, 0, 0.07);
+  transition: 0.5s ease-in-out;
+}
+
+.specialist-card img {
+  background-color: var(--khaki-color);
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.specialist-card h3 {
+  font-size: 1.2rem;
+  color: var(--navy-color);
+}
+
+.specialist-card span {
+  font-size: 1.2rem;
+  color: var(--gray-color);
+  margin-bottom: 2rem;
+}
+
+.specialist-card:hover {
+  transform: translateX(15px);
+  cursor: pointer;
+}
+
 :root {
   --lightblue-color: rgb(233, 241, 255);
   --darkblue-color: rgba(1, 78, 213);
@@ -477,6 +586,7 @@
   --bg-color:rgb(243, 243, 243);
   --purple-color:rgb(128, 0, 128);
   --green-color:rgb(121, 255, 124);
+  --khaki-color:rgb(216,216,212);
 }
 
 * {
