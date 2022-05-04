@@ -59,7 +59,7 @@
   p {
     font-size: 1.5rem;
     color: var(--gray-color);
-    margin: 2rem 3rem;
+    margin: 1rem 1rem;
   }
 }
 
@@ -240,108 +240,196 @@
   font-size: 2.5rem;
   color: var(--navy-color);
 
-  p{
+  p {
     color: var(--gray-color);
     font-size: 1.5rem;
     margin: 1rem 0;
   }
 }
-.search-doctor-search-bar{
+.search-doctor-search-bar {
   display: flex;
   margin: 1rem 3rem;
   align-items: center;
 
-  i{
+  i {
     background-color: var(--lightgray-color);
     color: var(--purple-color);
     font-size: 1.5rem;
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 50%;
-
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
 
-.search-doctor-search-bar-description{
+.search-doctor-search-bar-description {
   margin: 1rem 3rem;
   padding: 2rem 0.5rem;
   border-left: 1px solid var(--purple-color);
   border-radius: 1rem;
   width: 50%;
-  p{
+  p {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
 
-.search-doctor-appointment{
+.search-doctor-appointment {
   display: flex;
   margin: 1rem 3rem;
   align-items: center;
 
-  i{
+  i {
     background-color: var(--lightgray-color);
     color: var(--darkblue-color);
     font-size: 1.5rem;
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 50%;
-
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
 
-.search-doctor-appointment-description{
+.search-doctor-appointment-description {
   margin: 1rem 3rem;
   padding: 2rem 0.5rem;
   border-left: 1px solid var(--darkblue-color);
   border-radius: 1rem;
   width: 50%;
-  p{
+  p {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
 
-.search-doctor-contact{
+.search-doctor-contact {
   display: flex;
   margin: 1rem 3rem;
   align-items: center;
 
-  i{
+  i {
     background-color: var(--lightgray-color);
     color: var(--green-color);
     font-size: 1.5rem;
     padding: 0.5rem;
     margin-right: 1rem;
     border-radius: 50%;
-
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
-.search-doctor-contact-description{
+.search-doctor-contact-description {
   margin: 1rem 3rem;
   padding: 2rem 0.5rem;
   border-left: 1px solid var(--green-color);
   border-radius: 1rem;
   width: 50%;
-  p{
+  p {
     font-size: 1.5rem;
     color: var(--navy-color);
   }
 }
 
-.search-doctor-image{
+.search-doctor-image {
   margin-top: 5rem;
   align-items: center;
+  position: relative;
+}
+
+.searchTool {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: var(--white-color);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+.searchTool__search-input,
+.searchTool__search-location {
+  border: 2px solid var(--lightgray-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+
+  input {
+    border: none;
+    outline: none;
+  }
+  i {
+    color: var(--navy-color);
+  }
+  ::placeholder {
+    background-color: var(--white-color);
+  }
+}
+
+.searchTool__search-btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--lightgray-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  i {
+    margin: 0 0.3rem;
+  }
+}
+////////////////////////////////////////////////////////
+.choose-wecare-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: var(--lightblue-color);
+}
+
+.choose-wecare-list {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: var(--navy-color);
+    font-size: 5.8rem;
+  }
+  span{
+    color: var(--gray-color);
+    font-size: 2rem;
+  }
+}
+
+.choose-wecare__item{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: var(--navy-color);
+  font-weight: 500;
+  font-size: 2rem;
+
+  i{
+    border: 1px solid var(--darkblue-color);
+    border-radius: 50%;
+    color: var(--darkblue-color);
+    padding: 0.5rem;
+    margin: 0 1rem;
+  }
 }

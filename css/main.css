@@ -65,7 +65,7 @@
 .hero__title p {
   font-size: 1.5rem;
   color: var(--gray-color);
-  margin: 2rem 3rem;
+  margin: 1rem 1rem;
 }
 
 .rank {
@@ -364,6 +364,105 @@
 .search-doctor-image {
   margin-top: 5rem;
   align-items: center;
+  position: relative;
+}
+
+.searchTool {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: var(--white-color);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.searchTool h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.searchTool__search-input,
+.searchTool__search-location {
+  border: 2px solid var(--lightgray-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.searchTool__search-input input,
+.searchTool__search-location input {
+  border: none;
+  outline: none;
+}
+
+.searchTool__search-input i,
+.searchTool__search-location i {
+  color: var(--navy-color);
+}
+
+.searchTool__search-input ::placeholder,
+.searchTool__search-location ::placeholder {
+  background-color: var(--white-color);
+}
+
+.searchTool__search-btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--lightgray-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.searchTool__search-btn i {
+  margin: 0 0.3rem;
+}
+
+.choose-wecare-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: var(--lightblue-color);
+}
+
+.choose-wecare-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-wecare-list h2 {
+  color: var(--navy-color);
+  font-size: 5.8rem;
+}
+
+.choose-wecare-list span {
+  color: var(--gray-color);
+  font-size: 2rem;
+}
+
+.choose-wecare__item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: var(--navy-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.choose-wecare__item i {
+  border: 1px solid var(--darkblue-color);
+  border-radius: 50%;
+  color: var(--darkblue-color);
+  padding: 0.5rem;
+  margin: 0 1rem;
 }
 
 :root {
