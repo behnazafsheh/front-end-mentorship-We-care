@@ -106,29 +106,29 @@
            <div class="search-option">
                <h3 class="search-option__header">You may be looking for</h3>
                <div class="search-option__items">
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     Family Medicine
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     Pediatrics
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     Top Hospitals
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     TeleHealth
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     COVID-19
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
-                <div class="search-items">
+                <div class="search-items" id="remove">
                     Orthopedic Surgery
-                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#"><i class="fa-solid fa-xmark" onclick="removeElement()"></i></a>
                 </div>
                 <button type="button" class="search-option__btn">More</button>
                </div>
@@ -143,8 +143,8 @@
         <div class="popular-search-items">
             <div class="select-items">
                 <select size=3 class="select-items__option">
-                    <option>Specialties</option>
-                    <option>Conditions</option>
+                    <option class="btn-cat" source="cat-1">Specialties</option>
+                    <option class="btn-cat" source="cat-2">Conditions</option>
                     <option>Procedures</option>
                     <option>Internal</option>
                     <option>Neurology</option>
@@ -153,23 +153,23 @@
                     <option>General</option>
                   </select>
             </div>
-            <div class="specialties-col active" onclick="selected()" id="specialties">
+            <div class="specialties-col  portfolio-block" id="cat-1">
                 <img src="images/dermatology-icon.png" alt="">
                 <p>Dermatology</p>
             </div>
-            <div class="specialties-col" onclick="selected()" id="specialties">
+            <div class="specialties-col portfolio-block" id="cat-1">
                 <img src="images/internal-medicine.png" alt="">
                 <p>Internal Medicine</p>
             </div>
-            <div class="specialties-col" onclick="selected()" id="specialties">
+            <div class="specialties-col portfolio-block" id="cat-1">
                 <img src="images/neurology.png" alt="">
                 <p>Neurology</p>
             </div>
-            <div class="specialties-col" onclick="selected()" id="specialties">
+            <div class="specialties-col portfolio-block" id="cat-1">
                 <img src="images/general-medicine.png" alt="">
                 <p>General Medicine</p>
             </div>
-            <div class="specialties-col" onclick="selected()" id="specialties">
+            <div class="specialties-col portfolio-block" id="cat-1">
                 <img src="images/dentistry.png" alt="">
                 <p>Dentistry</p>
             </div>
