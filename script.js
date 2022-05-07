@@ -46,13 +46,13 @@ function removeElement(){
 //   $(".cat-3").click(function(){ filterGroup("group-3"); });
 // });
 
-$(document).on('click', '.btn-cat', function(e){
-  var $type = $(this).data("cat-source");
-  if($type == "all"){
-    $('.portfolio-block').fadeOut(0);
-    $('.portfolio-block').fadeIn(1000);
-  }else{
-    $('.portfolio-block').hide();
-    $('#'+$type + ".portfolio-block").fadeIn(1000);
-  }
-})
+// $(document).on('click', '.btn-cat', function(e){
+//   var $type = $(this).data("cat-source");
+//   if($type == "all"){
+//     $('.portfolio-block').fadeOut(0);
+//     $('.portfolio-block').fadeIn(1000);
+//   }else{
+//     $('.portfolio-block').hide();
+//     $('#'+$type + ".portfolio-block").fadeIn(1000);
+//   }
+// })
