@@ -1,5 +1,6 @@
 .header {
   background-color: var(--lightblue-color);
+  position: relative;
 }
 
 .menu {
@@ -68,7 +69,7 @@
 }
 
 .hero__title h1 {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   color: var(--navy-color);
   margin: 1rem 3rem;
@@ -77,7 +78,7 @@
 .hero__title p {
   font-size: 1.5rem;
   color: var(--gray-color);
-  margin: 1rem 1rem;
+  margin: 1rem 3rem;
 }
 
 .rank {
@@ -91,6 +92,7 @@
   align-items: center;
   background-color: var(--navy-color);
   margin: 0 1rem;
+  padding: 1rem;
   border-radius: 0.5rem;
 }
 
@@ -121,14 +123,18 @@
 .search-bar-container {
   background-color: var(--white-color);
   width: 75%;
-  height: 20rem;
+  min-height: 20rem;
   border-radius: 1rem;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  bottom: -18rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .search-bar__items {
@@ -140,10 +146,11 @@
 .search-people,
 .search-location {
   display: flex;
-  width: 35%;
+  width: 100%;
   border: 0.01rem solid var(--gray-color);
   border-radius: 1rem;
   padding: 2rem;
+  margin: 0 1rem;
   background-color: var(--lightgray-color);
 }
 
@@ -166,13 +173,17 @@
 }
 
 .search-bar__btn {
-  width: 7%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   height: 100%;
   background-color: var(--darkblue-color);
   color: var(--white-color);
   border: none;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 2rem;
+  margin: 0 1rem;
 }
 
 .search-bar__btn:hover {
@@ -219,11 +230,11 @@
 }
 
 .popular-search {
-  margin-top: 20rem;
+  margin-top: 25rem;
 }
 
 .popular-search__header {
-  margin: 1rem 3rem;
+  margin: 3rem 3rem;
   font-size: 2.5rem;
   color: var(--navy-color);
 }
@@ -289,7 +300,7 @@
 .search-doctor-items p {
   color: var(--gray-color);
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .search-doctor-search-bar {
@@ -806,8 +817,9 @@
 .footer-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
   align-items: center;
+  background-color: var(--lightblue-color);
 }
 
 .footer-logo {
@@ -829,6 +841,7 @@
 
 .footer-social-media i {
   color: var(--navy-color);
+  font-size: 2rem;
 }
 
 .footer-social-media i:hover {
@@ -853,19 +866,19 @@
 
 #circle-orbit-container {
   position: absolute;
-  top: 125px;
-  right: 250px;
-  height: 300px;
-  width: 300px;
+  top: 16%;
+  left: 53%;
+  height: 750px;
+  width: 750px;
 }
 
 #inner-orbit {
   position: absolute;
   top: 75px;
   left: 75px;
-  width: 150px;
-  height: 150px;
-  border: 2px #4a437f solid;
+  width: 250px;
+  height: 250px;
+  border: 0.5px var(--gray-color) solid;
   border-radius: 100%;
   animation: spin-right 10s linear infinite;
 }
@@ -877,7 +890,7 @@
   height: 25px;
   width: 25px;
   border-radius: 100%;
-  background-color: #9f98e6;
+  background-color: var(--navy-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -887,21 +900,21 @@
   position: absolute;
   top: 35px;
   left: 35px;
-  width: 225px;
-  height: 225px;
-  border: 2px #4a437f solid;
+  width: 325px;
+  height: 325px;
+  border: 0.5px var(--gray-color) solid;
   border-radius: 100%;
   animation: spin-right 15s linear infinite;
 }
 
 .middle-orbit-cirlces {
   position: absolute;
-  top: 25px;
+  top: 61px;
   left: 17px;
   height: 20px;
   width: 20px;
   border-radius: 100%;
-  background-color: #4a437f;
+  background-color: var(--navy-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -911,21 +924,21 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 294px;
-  height: 294px;
-  border: 2px #4a437f solid;
+  width: 394px;
+  height: 394px;
+  border: 0.5px var(--gray-color) solid;
   border-radius: 100%;
   animation: spin-right 20s linear infinite;
 }
 
 .outer-orbit-cirlces {
   position: absolute;
-  top: -17px;
+  top: -6px;
   left: 125px;
   height: 30px;
   width: 30px;
   border-radius: 100%;
-  background-color: #00ffca;
+  background-color: var(--navy-color);
   display: flex;
   align-items: center;
   justify-content: center;
