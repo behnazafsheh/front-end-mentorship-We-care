@@ -972,9 +972,12 @@
   overflow: hidden;
   border-radius: 0px 0px 20px 20px;
   display: inline-block;
-  image-rendering-transform: skew(0deg, -13deg);
-  image-rendering-height: 250px;
-  image-rendering-margin: -1px 0px 0px -70px;
+}
+
+.img-container img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -1px 0px 0px -70px;
 }
 
 .inner-skew {
